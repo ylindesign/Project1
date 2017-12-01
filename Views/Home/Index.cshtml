@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Registration";
+}
+@model project1.Models.RegisterViewModel
+
+<h1>Registration</h1>
+<form asp-controller="Home" asp-action="Register" method="post">
+    <div class="row">
+        <label asp-for="first_name"></label>
+        <input asp-for="first_name" type="text"/>
+        <span asp-validation-for="first_name" class="newlines error"></span>
+    </div>
+    <div class="row">
+        <label asp-for="last_name"></label>
+        <input asp-for="last_name" type="text"/>
+        <span asp-validation-for="last_name" class="newlines error"></span>
+    </div>
+    <div class="row">
+        <label asp-for="email"></label>
+        <input asp-for="email" type="text"/>
+        <span asp-validation-for="email" class="newlines error"></span>
+    </div>
+    <div class="row">
+        <label asp-for="password"></label>
+        <input asp-for="password" type="Password"/>
+        <span asp-validation-for="password" class="newlines error"></span>
+    </div>
+    <div class="row">
+        <label asp-for="pw_conf"></label>
+        <input name="pw_conf" type="Password"/>
+        <span asp-validation-for="pw_conf" class="error"></span>
+    </div>
+    <div class="row">
+        <button type="submit">Register</button>
+    </div>
+</form>

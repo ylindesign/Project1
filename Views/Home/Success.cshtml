@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Success";
+}
+
+<h1 class="correct">@TempData["message"]</h1>
+
+<h3>Other people who have registered:</h3>
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Created At</th>
+    </tr>
+    @if (ViewBag.AllUsers != null) {
+        @foreach (var info in ViewBag.AllUsers) {
+        <tr>
+            <td>@info.first_name</td>
+            <td>@info.last_name</td>
+            <td>@info.email</td>
+            <td>@info.created_at.ToString("d MMM yyyy")</td>
+        </tr>
+        }
+    }
+</table>
+

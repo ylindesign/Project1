@@ -1,0 +1,88 @@
+/*Write all of your CSS here*/
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+form {
+    width: 25%;
+    text-align: left;
+}
+
+label {
+    width: 100%;
+    padding: 15px 0 0;
+    display: inline-block;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 0;
+    border-style: ridge;
+    border-radius: 4px;
+}
+
+button {
+    width: 50%;
+    height: 35px;
+    margin: 10px 0 0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    background-color: #0166b7;
+    border-color: transparent;
+}
+
+.newlines { 
+    white-space: pre-line; 
+}
+
+.error {
+    font-size: 13px;
+    color: red;
+}
+
+.correct {
+    color: #00c308
+}
+
+table {
+    width: 70%;
+}
+
+th {
+    font-weight: 700;
+    text-align: left;
+}
+
+table, th, td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* .col-40 {
+    width: 40%;
+    float: left;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+}
+
+.col-60 {
+    width: 60%;
+    float: left;
+}
+
+.right {
+    float: right;
+} */
