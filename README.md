@@ -1,5 +1,4 @@
-# Project1
-Login/Registration w/ Validations
+# Project1 - Login/Registration w/ Validations
 Built a C#/.NET Core web page application that only allows users to register or login. The main focus of this project was to experiment with asp-for error message handling and using custom attributes.
 
 
